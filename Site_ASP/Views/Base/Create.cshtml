@@ -1,0 +1,12 @@
+﻿@model  Site_ASP.Models.CreateViewModel
+
+@section Header {
+    <h2>Base Create</h2>
+    }
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(b=>b.Base)
+    <input type="submit" value="Create" />
+}
+
