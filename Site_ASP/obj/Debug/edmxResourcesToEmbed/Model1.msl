@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjetCModelStoreContainer" CdmEntityContainer="ProjetCEntities">
+    <EntitySetMapping Name="Fichier">
+      <EntityTypeMapping TypeName="ProjetCModel.Fichier">
+        <MappingFragment StoreEntitySet="Fichier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IconeUrl" ColumnName="IconeUrl" />
+          <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+          <ScalarProperty Name="Taille" ColumnName="Taille" />
+          <ScalarProperty Name="Auteur" ColumnName="Auteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -45,12 +45,22 @@
       <RoleName>Site_ASP</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\WorkerRole1\WorkerRole1.csproj">
+      <Name>WorkerRole1</Name>
+      <Project>{bd02e78b-11a7-443f-8d22-f52331e1281b}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>WorkerRole1</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Site_ASPContent\" />
+    <Folder Include="WorkerRole1Content\" />
   </ItemGroup>
   <ItemGroup>
     <DiagnosticsConfiguration Include="Site_ASPContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="WorkerRole1Content\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

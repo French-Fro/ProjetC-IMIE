@@ -1,0 +1,22 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Emulator config file set to D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] DiagnosticsStoreRootPath set to: C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Loading config file: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Config file to read: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Emulator config file set to D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Found a MonAgentHost.exe. WadArguments: "D:\IMIE\PAAS\Correction exo\C#\ContosoAdsCloudService\csx\Debug\roles\ContosoAdsWorker\plugins\Diagnostics\Monitor\x64\MonAgentHost.exe" -LocalPath "C:\Users\setri\AppData\Local\dftmp\Resources\22b6f304-f61f-4fb7-9c10-37c9ba750de3\WAD0105"  -ConfigFile "C:\Users\setri\AppData\Local\dftmp\Resources\22b6f304-f61f-4fb7-9c10-37c9ba750de3\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-bc3c872e4603447f9cbb509157c7170b  -TotalShutDownEvent WADDM-TotalShutDown-bc3c872e4603447f9cbb509157c7170b -InitializedEvent WADM-StartUp-bc3c872e4603447f9cbb509157c7170b -parent 4012 -events -wadVer1v5 -UseProxyServer.
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Found a DiagnosticsPlugin.exe. WadArguments: "D:\IMIE\PAAS\Correction exo\C#\ContosoAdsCloudService\csx\Debug\roles\ContosoAdsWorker\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Loading config file: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Config file to read: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Found a running wad2 MA not sharing the same local directory
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:20:58] Found a DiagnosticsPlugin.exe. WadArguments: "D:\IMIE\PAAS\Correction exo\C#\ContosoAdsCloudService\csx\Debug\roles\ContosoAdsWorker\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:21:09] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:21:09] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [23/01/2019 21:21:09] Resetting DiagnosticPlugin

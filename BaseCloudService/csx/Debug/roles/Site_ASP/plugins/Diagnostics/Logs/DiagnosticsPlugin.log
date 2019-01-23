@@ -1,0 +1,77 @@
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [23/01/2019 21:21:09] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [23/01/2019 21:21:09] System.UnauthorizedAccessException: Nom du fichier : redirection.config
+Erreur : Impossible de lire le fichier de configuration en raison d'autorisations insuffisantes
+
+
+   à Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   à Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   à Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   à Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   à Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   à Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   à Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Emulator config file set to D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] DiagnosticsStoreRootPath set to: C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Loading config file: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Config file to read: D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Emulator config file set to D:\Bibliothèque\Documents\IMIE\PAAS\BaseCloudService\csx\Debug\roles\Site_ASP\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:09] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:10] Successfully created checkpoint file C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:10] Will use local resource directory C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:11] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:11] Exception in creating the ServerManager; is IIS installed?
+ Error:System.UnauthorizedAccessException: Nom du fichier : redirection.config
+Erreur : Impossible de lire le fichier de configuration en raison d'autorisations insuffisantes
+
+
+   à Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   à Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   à Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   à Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   à Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   à Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   à Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:11] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:11] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [23/01/2019 21:21:12] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9\WAD0105"  -ConfigFile "C:\Users\setri\AppData\Local\dftmp\Resources\c8556b82-94e5-4dc6-a365-31de8d92e7e9\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-a5c1c34e299a475baa754ddcfcfa7b74  -TotalShutDownEvent WADDM-TotalShutDown-a5c1c34e299a475baa754ddcfcfa7b74 -InitializedEvent WADM-StartUp-a5c1c34e299a475baa754ddcfcfa7b74 -parent 15272 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
